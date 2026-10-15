@@ -1,0 +1,7 @@
+# KHÔNG commit key và file rác
+.env
+.venv/
+__pycache__/
+*.pyc
+.cache/
+live-run-*.json

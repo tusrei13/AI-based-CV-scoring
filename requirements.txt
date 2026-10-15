@@ -1,0 +1,9 @@
+# Thư viện cần cho project (bản rút gọn cho newbie).
+# Cài bằng: pip install -r requirements.txt
+
+pymupdf4llm      # đọc PDF -> văn bản Markdown
+google-genai     # SDK MỚI để gọi Gemini (thay cho google-generativeai đã ngừng hỗ trợ)
+pydantic         # định nghĩa "khuôn" dữ liệu + kiểm tra hợp lệ
+jinja2           # template cho các prompt (.jinja)
+python-dotenv    # đọc API key từ file .env
+pytest           # chạy test logic thuần code
