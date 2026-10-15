@@ -1,0 +1,12 @@
+Trích xuất toàn bộ CV thành đúng schema Resume gồm basics, work, education, skills, projects và awards.
+
+Quy tắc bắt buộc:
+- Chỉ lấy thông tin xuất hiện trong CV, không suy diễn và không biến dự án thành kinh nghiệm đi làm.
+- Giữ nguyên tên công nghệ, mốc thời gian, URL và số liệu như trong CV.
+- Work chỉ gồm đi làm/thực tập có công ty/chức danh; dự án, đồ án, hackathon để ở projects/awards.
+- Nếu thiếu trường, dùng null hoặc danh sách rỗng.
+- Với học vấn đang học, giữ endDate là Present hoặc để trống; chỉ điền expectedGraduation nếu CV nêu rõ.
+
+--- CV bắt đầu ---
+{{ text_content }}
+--- CV kết thúc ---

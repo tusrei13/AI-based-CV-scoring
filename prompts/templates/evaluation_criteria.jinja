@@ -1,0 +1,24 @@
+Chấm CV theo JobDescription JSON dưới đây. Trả về đúng schema Evaluation.
+
+JOB DESCRIPTION:
+{{ job_description }}
+
+UNSUPPORTED_SKILLS DO CODE TÍNH:
+{{ unsupported_skills | join(', ') }}
+
+CV (nguồn duy nhất của evidence):
+{{ text_content }}
+
+Quy tắc:
+- Phân loại từng yêu cầu JD vào coverage với status met/partial/not_evidenced/missing và evidence_quote nguyên văn.
+- job_fit chỉ phản ánh coverage; không tự cảm tính.
+- Với Intern/Fresher dùng rubric: job_fit 20, practical_experience_projects 30, technical_skills 20, education 10, languages 5, credibility 5, presentation 5, potential_soft_skills 5.
+- Với Junior/Middle/Senior dùng rubric: job_fit 25, work_experience 25, technical_skills 15, projects_portfolio 10, education_certifications 5, languages 5, credibility 8, presentation 3, soft_skills 4.
+- Dự án cá nhân không phải work; hackathon/award chỉ tính trong potential_soft_skills, không tính lại ở dự án.
+- Mỗi category ghi gaps, confidence và rationale tối đa 2 câu. Số điểm chỉ là đề xuất trong max.
+- Số liệu simulated/internal/thiếu điều kiện đo phải ghi chưa kiểm chứng và áp dụng caps: projects tối đa 85%, credibility tối đa 80%.
+- 25+ công nghệ hoặc hơn 40% skills không có bằng chứng: technical_skills tối đa 70%.
+- Ngoại ngữ không có điểm số/ngày cấp: languages tối đa 80%.
+- Thiếu demo/link, test/CI/CD thì ghi gaps; chỉ trừ nếu JD yêu cầu.
+- Red flags chỉ liệt kê điều thực sự thấy; không có thì ghi "không phát hiện".
+- Tạo 3-5 câu hỏi phỏng vấn cụ thể bám CV.

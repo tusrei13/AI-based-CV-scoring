@@ -1,0 +1,11 @@
+{# Prompt trích xuất THÔNG TIN CƠ BẢN. Biến {{ text_content }} = toàn bộ text CV. #}
+Trích xuất thông tin cơ bản của ứng viên từ CV dưới đây:
+- Họ tên, email, số điện thoại, LinkedIn, nơi ở (thành phố).
+- Nếu có URL LinkedIn hiển thị dạng chữ hoặc hyperlink, lấy URL đó; không tự bịa URL.
+- Nếu CV có phần "Giới thiệu" / "About me" / "Objective", đưa vào trường summary.
+
+Chỉ lấy dữ liệu có thật trong CV. Trường nào không có thì để trống.
+
+--- CV bắt đầu ---
+{{ text_content }}
+--- CV kết thúc ---

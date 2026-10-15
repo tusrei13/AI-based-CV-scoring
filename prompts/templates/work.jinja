@@ -1,0 +1,14 @@
+{# Prompt trích xuất KINH NGHIỆM LÀM VIỆC. Trả về danh sách các công việc. #}
+Trích xuất danh sách kinh nghiệm làm việc (đi làm, thực tập) từ CV dưới đây.
+Với mỗi công việc, lấy: tên công ty, chức danh, ngày bắt đầu, ngày kết thúc, mô tả.
+
+Về ngày tháng:
+- Khoảng thời gian thường viết dạng "Bắt đầu - Kết thúc" (dấu -, –, hoặc chữ "đến").
+- Nếu đang làm, ngày kết thúc có thể là "Hiện tại" / "Present" / "Nay".
+- Cố gắng đưa về dạng YYYY-MM nếu được.
+
+Chỉ lấy kinh nghiệm có thật trong CV. Nếu không có phần này, trả về danh sách rỗng.
+
+--- CV bắt đầu ---
+{{ text_content }}
+--- CV kết thúc ---

@@ -1,0 +1,12 @@
+{# Prompt trích xuất KỸ NĂNG. Gom theo nhóm, mỗi nhóm có danh sách kỹ năng cụ thể. #}
+Trích xuất kỹ năng từ CV dưới đây, gom theo nhóm.
+Ví dụ nhóm "Ngôn ngữ lập trình" -> ["Python", "Java"], nhóm "Cơ sở dữ liệu" -> ["MySQL", "MongoDB"].
+Mỗi nhóm gồm: tên nhóm (name) và danh sách kỹ năng cụ thể (keywords).
+Nhớ trích xuất riêng nhóm "Ngoại ngữ" và "Chứng chỉ" nếu CV có, giữ nguyên bằng chứng
+như IELTS 6.5, TOEIC hoặc tên chứng chỉ cụ thể.
+
+Chỉ lấy dữ liệu có thật. Nếu không có, trả về danh sách rỗng.
+
+--- CV bắt đầu ---
+{{ text_content }}
+--- CV kết thúc ---
