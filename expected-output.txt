@@ -1,0 +1,47 @@
+# Output lịch sử trước khi rubric được mở rộng: python main.py sample/sample_resume.pdf
+# Hãy chạy lại để nhận báo cáo theo 9 nhóm tiêu chí hiện tại.
+# Model: gemini-flash-latest. Con số có thể lệch nhẹ giữa các lần chạy (temperature 0.1).
+
+📄 Đang đọc PDF: sample/sample_resume.pdf
+   -> lấy được 1877 ký tự văn bản.
+
+🤖 Trích xuất CV bằng Gemini (structured output):
+   • Trích xuất thông tin cơ bản (basics)...
+   • Trích xuất kinh nghiệm làm việc (work)...
+   • Trích xuất học vấn (education)...
+   • Trích xuất kỹ năng (skills)...
+   • Trích xuất dự án (projects)...
+
+🧮 Đang chấm điểm ứng viên...
+
+============================================================
+📊 KẾT QUẢ ĐÁNH GIÁ CV: NGUYEN VAN AN
+============================================================
+
+📈 ĐIỂM TỪNG NHÓM:
+
+🚀 Dự án cá nhân: 37/50
+   Bằng chứng: Có dự án 'SmartQueue' có tính thực tế (được sử dụng tại phòng khám trường) sử dụng WebSocket và FastAPI, và dự án 'MiniGPT-Notes' tích hợp LLM cục bộ bằng PyTorch. Cả hai đều có link GitHub rõ ràng.
+
+🏢 Kinh nghiệm đi làm: 18/30
+   Bằng chứng: Đã hoàn thành kỳ thực tập Backend Developer Intern tại FPT Software (3 tháng), có số liệu chứng minh hiệu quả công việc cụ thể (giảm 40% độ trễ endpoint, phục vụ 5k requests/ngày).
+
+💻 Kỹ năng kỹ thuật: 16/20
+   Bằng chứng: Kỹ năng kỹ thuật tốt, bao quát cả Backend (FastAPI, Flask, SQL/NoSQL), Frontend (React), DevOps cơ bản (Docker) và Machine Learning (PyTorch).
+
+⚠️  ĐIỂM TRỪ: -3
+   Trừ 3 điểm do dự án 'Todo App' không có link kiểm chứng.
+
+------------------------------------------------------------
+🎯 TỔNG ĐIỂM: 68.0/100
+------------------------------------------------------------
+
+✅ ĐIỂM MẠNH:
+  1. Có kinh nghiệm thực tập thực tế với kết quả đo lường được (giảm 40% latency).
+  2. Dự án cá nhân (SmartQueue) có tính thực tiễn cao, được đưa vào sử dụng thực tế tại phòng khám trường.
+  3. Kỹ năng công nghệ đa dạng từ Full-stack (React, FastAPI, WebSockets) đến AI/ML cơ bản (PyTorch).
+
+🔧 CẦN CẢI THIỆN:
+   1. Nên loại bỏ các dự án quá đơn giản như 'Todo App' hoặc nếu giữ lại thì cần có link mã nguồn để kiểm chứng.
+============================================================
+
