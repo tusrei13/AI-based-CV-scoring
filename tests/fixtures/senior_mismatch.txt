@@ -1,0 +1,1 @@
+Senior engineer with 5 years of Ruby on Rails and PostgreSQL work at Acme.\nProjects: internal billing platform.\n

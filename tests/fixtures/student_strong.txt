@@ -1,0 +1,1 @@
+Nguyen A\nEducation: BSc Computer Science, Sep 2024 - Present, GPA 3.21\nProjects: Deploy web app with React and Node.js; tests and CI.\nSkills: React, Node.js, Java, MongoDB, SQL Server\nHackathon finalist, teamwork in a 4-person team.\n

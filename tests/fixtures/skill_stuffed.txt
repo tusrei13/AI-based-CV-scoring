@@ -1,0 +1,1 @@
+Candidate C\nSkills: Python, Java, C, C++, Go, Rust, JavaScript, TypeScript, React, Vue, Angular, Node.js, Next.js, Django, Flask, FastAPI, Spring, .NET, PHP, Ruby, MySQL, MongoDB, Redis, Kafka, Docker, Kubernetes, AWS, Azure, GCP, Nginx, Terraform, Ansible, Jenkins, GitLab CI, GraphQL, gRPC, Linux, Spark, Hadoop.\nProjects: A small Python script.\n
